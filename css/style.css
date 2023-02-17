@@ -1,15 +1,18 @@
 body {
-    background-color: aqua;
+    background-color: #b3ff00;
 }
 
 .btn2 {
-    border: none;
-    background-color: brown;
-    color: blueviolet;
-    font-size: 1em;
+    border:none;
+    background-color: #64e340;
+    color: #4f72cb;
+    font-size: 8px;
+    font-family: inherit;
+    padding: 1rem 1rem;
     cursor: pointer;
 }
 
 .first {
-    background-color: bisque;
+    font-family: Arial;
+    font-size: 10px;
 }

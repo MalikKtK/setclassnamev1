@@ -1,34 +1,36 @@
 console.log("jeg er i inc font")
-const ptag = document.querySelector(".first");
+
+const ptag = document.querySelector(".first")
 console.log(ptag)
 
-let fontSize = 10;
+let fontsize = 10;
 
 function increaseFont(e) {
-    console.log("jeg er i inc font")
-    fontSize++;
-    ptag.style.fontSize = fontSize + "px";
-
+    console.log("set font")
+    fontsize++;
+    ptag.style.fontSize = fontsize + "px"
 }
 
 function decreaseFont(e) {
-    console.log("jeg er i dec font")
-    fontSize--;
-    ptag.style.fontSize = fontSize + "px";
+    console.log("set font")
+    fontsize--;
+    ptag.style.fontSize = fontsize + "px"
 }
 
 function testEscapePressed(e) {
     console.log(e)
-    if (e.key === "Escape") {
-        fontSize = 10;
-        ptag.style.fontSize = fontSize + "px"
+    if (e.key === 'Escape') {
+        fontsize = 10
+        ptag.style.fontSize = fontsize + "px"
     }
 }
 
+
 const pbIncrease = document.querySelector(".pbIncrease")
-pbIncrease.addEventListener("click", increaseFont)
+pbIncrease.addEventListener('click', increaseFont)
 
 const pbDecrease = document.querySelector(".pbDecrease")
-pbDecrease.addEventListener("click", decreaseFont)
+pbDecrease.addEventListener('click', decreaseFont)
 
-document.addEventListener("keydown", e => testEscapePressed(e))
+
+document.addEventListener('keydown', e => testEscapePressed(e))
