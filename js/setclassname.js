@@ -1,11 +1,16 @@
-console.log("Jeg er i setclassname")
+console.log("jeg er i setclassname")
 
-let inpElementName = document.querySelector(".elementName")
-let inpStyleName = document.querySelector(".styleName")
-let pbSetClassName = document.querySelector(".pbSetClassName")
+let inpElementName = document.getElementById("elementName")
+let inpStyleName = document.getElementById("styleName")
+let pbSetClassName = document.getElementById("pbSetStyle")
 
 function setStyle() {
     const elm = document.querySelector("." + inpElementName.value)
+    console.log(elm)
+    elm.className = ""
+    elm.classList.add(inpStyleName.value)
+    elm.classList.add(inpElementName.value)
+    console.log(elm.classList)
 }
 
 pbSetClassName.addEventListener('click', setStyle)
